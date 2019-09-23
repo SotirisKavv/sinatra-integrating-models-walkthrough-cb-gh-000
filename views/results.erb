@@ -1,9 +1,9 @@
 <h1>Your Text Analysis</h1>
 <%text = TextAnalyzer.new(params[:user_text])%>
-<h2>Number of Words: <%text.count_of_words%></h2>
+<h2>Number of Words: <%=text.count_of_words%></h2>
 
-<h2>Vowels: <%text.count_of_vowels%></h2>
+<h2>Vowels: <%=text.count_of_vowels%></h2>
 
-<h2>Consonants: <%text.count_of_consonants%></h2>
+<h2>Consonants: <%=text.count_of_consonants%></h2>
 
-<h2>Most Common Letter: <%text.most_used_letter.key%> used <%text.most_used_letter.value%> times</h2>
+<h2>Most Common Letter: <%=text.most_used_letter.key%> used <%=text.most_used_letter.value%> times</h2>
